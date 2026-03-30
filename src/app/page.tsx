@@ -62,7 +62,7 @@ export default function Home() {
   const [loginError, setLoginError] = useState('');
   
   // Member Management State
-  const [members, setMembers] = useState<{ id: string; name: string; generation: number }[]>([]);
+  const [members, setMembers] = useState<{ id: string; name: string; generation: number; location?: string }[]>([]);
   const [gamelanLink, setGamelanLink] = useState('');
   const [manageForm, setManageForm] = useState({ id: '', name: '', location: '' });
   const [manageLoading, setManageLoading] = useState(false);
